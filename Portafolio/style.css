@@ -1,0 +1,29 @@
+:root {
+    --color-principal: #4e342e;   /* Marrón oscuro */
+    --color-secundario: #d7ccc8;  /* Beige grisáceo */
+    --color-acento: #cfae70;      /* Dorado suave */
+    --color-fondo: #f4f0ec;       /* Fondo claro */
+}
+
+.custom-bg {
+    background-color: var(--color-fondo);
+}
+
+.header-banner {
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+}
+
+.logo-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
