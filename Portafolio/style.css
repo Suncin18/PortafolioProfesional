@@ -8,6 +8,14 @@
   --transition-fast: 200ms;
 }
 
+main section[id] {
+    scroll-margin-top: 90px;
+}
+
+:target {
+    scroll-margin-top: 90px;
+}
+
 /* Fonts */
 body {
   font-family: 'Roboto', sans-serif;
