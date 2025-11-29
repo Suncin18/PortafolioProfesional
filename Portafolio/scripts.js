@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
             gallery_title: "Galería de proyectos",
             project1_title: "Asignación Inteligente de Préstamos",
             project1_desc: "Solución para asignar de forma equitativa deals entre los funders",
-            project1_btn: "Ver detalles",
+            project1_btn: "Detalles",
             project2_title: "Integración DeFi Solutions",
             project2_desc: "Reglas en DeFi usando JS para acelerar aprobaciones, reducir intervención manual y mejorar control de riesgo.",
-            project2_btn: "Ver detalles",
+            project2_btn: "Detalles",
             project3_title: "API - Solicitudes Duplicadas",
             project3_desc: "API de Validación y Prevención de Duplicados de Clientes",
-            project3_btn: "Ver detalles",
+            project3_btn: "Detalles",
 
             // MODAL
             modal_tech_label: "Tecnologías:",
@@ -123,13 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
             gallery_title: "Project Gallery",
             project1_title: "Smart Loan Assignment",
             project1_desc: "Solution to distribute deals fairly between funders",
-            project1_btn: "View details",
+            project1_btn: "Details",
             project2_title: "DeFi Solutions Integration",
             project2_desc: "Decision rules in DeFi using JS to accelerate approvals, reduce manual intervention and improve risk control.",
-            project2_btn: "View details",
+            project2_btn: "Details",
             project3_title: "API - Duplicate Applications",
             project3_desc: "API for Duplicate Client Validation and Prevention",
-            project3_btn: "View details",
+            project3_btn: "Details",
 
             // MODAL
             modal_tech_label: "Technologies:",
