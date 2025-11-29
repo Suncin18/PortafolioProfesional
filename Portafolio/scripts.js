@@ -48,9 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // SKILLS SECTION
             skills_title: "Tecnologías & Stack",
+            skills_intro: "Enfocado en el desarrollo Back-End robusto y escalable. Utilizo C# y el ecosistema .NET para construir la lógica de negocio, junto con SQL Server para la gestión de datos. Mi experiencia se complementa con herramientas de automatización y DevOps, esenciales para la integración y despliegue continuo de soluciones empresariales.",
             
             // GALLERY SECTION
             gallery_title: "Galería de proyectos",
+            gallery_intro: "Esta galería presenta una selección de mis proyectos más relevantes, enfocados principalmente en integración de APIs, automatización de flujos de trabajo financiero y desarrollo de soluciones para la prevención de errores (duplicados). Cada proyecto ilustra la aplicación práctica de mis habilidades técnicas para resolver problemas de negocio críticos.",
             project1_title: "Asignación Inteligente de Préstamos",
             project1_desc: "Solución para asignar de forma equitativa deals entre los funders",
             project1_btn: "Detalles",
@@ -118,9 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // SKILLS SECTION
             skills_title: "Tech Stack",
+            skills_intro: "My core technology stack focuses on robust and scalable Back-End development. I use C# and the .NET ecosystem to build business logic, along with SQL Server for data management. My experience is complemented by automation and DevOps tools, essential for the continuous integration and deployment of enterprise solutions.",
 
             // GALLERY SECTION
             gallery_title: "Project Gallery",
+            gallery_intro: "This gallery showcases a selection of my most relevant projects, primarily focused on API integration, automation of financial workflows, and the development of solutions for error prevention (duplicates). Each project illustrates the practical application of my technical skills to solve critical business problems.",
             project1_title: "Smart Loan Assignment",
             project1_desc: "Solution to distribute deals fairly between funders",
             project1_btn: "Details",
