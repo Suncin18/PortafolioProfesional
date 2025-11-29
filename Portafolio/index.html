@@ -1,44 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Suncin | Portafolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Christian Suncin - Portafolio</title>
 
-    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/images/Logo Pequeno.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="shortcut icon" href="Files/Logo Pequeno.jpeg" type="image/x-icon">
+
+    <meta name="theme-color" content="#4e342e">
 </head>
-<body class="bg-light custom-bg">
+<body>
 
-    <!-- Hero / Header -->
-    <header class="text-center py-5 header-banner">
-        <div class="container">
+    <header class="main-header sticky-top">
+    <div class="container d-flex align-items-center justify-content-between py-2">
 
-            <div class="d-flex justify-content-center align-items-center gap-3 mb-3">
-                <div class="logo-placeholder">
-                    <img src="assets/images/Logo Grande.svg" alt="Logo grande" class="logo">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+        <img src="Files/Logo Pequeno.jpeg" alt="SUNCIN logo" class="logo-img-small me-2">
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto gap-3">
+            <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_home">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-i18n="nav_about">Acerca</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery" data-i18n="nav_gallery">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contacto</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="header-controls d-flex align-items-center gap-2">
+            <div class="form-check form-switch text-white">
+                <input class="form-check-input" type="checkbox" id="langToggle">
+                <label class="form-check-label small text-white" for="langToggle" id="langLabel" data-i18n="lang_toggle">Cambiar Idioma</label>
+            </div>
+        </div>
+
+    </div>
+    </header>
+  <main class="container my-5">
+
+    <section id="about" class="mb-5 section-card about-wrapper">
+        <div class="row g-4 align-items-center">
+            
+            <div class="col-md-4 text-center about-left d-flex flex-column justify-content-between">
+                <div>
+                    <img src="Files/Logo Pequeno.jpeg" alt="portrait" class="img-fluid rounded shadow about-img">
+                    <hr>
+                    <h4 class="mt-3">Christian Suncin</h4>
+                    <span class="text-muted d-block" data-i18n="about_role">Back-End Developer | Automation & API Integrations</span>
+                    <a href="mailto:jsuncin04@gmail.com" class="email-highlight d-block mt-2">jsuncin04@gmail.com</a>
+                </div>
+                <hr>
+                <div class="mt-4 text-start px-3">
+                    <h6 class="section-title mt-3"><i class="fa-solid fa-building-columns"></i> <span data-i18n="about_university_title">Universidad</span></h6>
+                    <p class="small mb-1" data-i18n="about_university_name">CENFOTEC</p>
+
+                    <h6 class="section-title mt-3"><i class="fa-solid fa-globe"></i> <span data-i18n="about_languages_title">Idiomas</span></h6>
+                    <ul class="small mb-0">
+                        <li><span data-i18n="lang_spanish">Español</span> — <span data-i18n="level_native">Nativo</span></li>
+                        <li><span data-i18n="lang_english">Inglés</span> — <span data-i18n="level_professional">Profesional</span></li>
+                    </ul>
+
+                    <h6 class="section-title mt-3"><i class="fa-solid fa-link"></i> <span data-i18n="about_social_title">Redes</span></h6>
+                    <ul class="list-unstyled small mb-0">
+                        <li><a href="https://www.linkedin.com/in/christian-suncin-softwaredeveloper/ " target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/Suncin18" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    </ul>
                 </div>
 
-                <div class="logo-placeholder">
-                    <img src="assets/images/Logo Pequeno.svg" alt="Logo pequeño" class="logo">
+                <div class="mt-3">
+                    <a href="Files/Curriculo vitae plano.pdf" target="_blank" class="btn btn-accent w-75" download data-i18n="about_download_cv">Descargar CV</a>
                 </div>
             </div>
 
-            <h1 class="fw-bold mt-3">CHRISTIAN SUNCIN</h1>
-            <p class="lead fst-italic">Donde la visión corporativa se convierte en código ejecutable.</p>
+            <div class="col-md-8">
+                <div class="about-card about-right">
+                    <div class="inner-card">
+                        <h2 class="mb-3"><i class="fa-solid fa-address-card"></i> <span data-i18n="about_title">Acerca de mí</span></h2>
+                        <p data-i18n="about_text">
+                            Desarrollador Back-End con más de 4 años optimizando operaciones financieras mediante automatización e integración de APIs corporativas con C# y SQL. Enfocado en reducir tiempos de decisión, eliminar tareas manuales y construir soluciones escalables bajo metodologías ágiles y Scrum.
+                        </p>
+
+                        <ul class="list-inline mt-3">
+                            <li class="list-inline-item badge"><i class="fa-solid fa-code"></i></li>
+                            <li class="list-inline-item badge">C#</li>
+                            <li class="list-inline-item badge">SQL</li>
+                            <li class="list-inline-item badge" data-i18n="skill_api">API Integrations</li>
+                            <li class="list-inline-item badge" data-i18n="skill_automation">Automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-4 inner-card">
+                        <h5 class="mb-3 data" data-i18n="experience_title">Experiencia</h5>
+
+                        <div class="experience-card">
+                            <div class="exp-item">
+                                <img src="Files/Finbe.jpg" class="exp-logo" alt="FinBe USA">
+                                <div class="exp-info">
+                                    <strong data-i18n="job_title_finbe">BackEnd Developer</strong> — FinBe USA
+                                    <br><small data-i18n="job_duration_finbe">2022 - Presente</small>
+                                    <ul>
+                                        <li data-i18n="job_desc1_finbe">Automatización de pasos clave en el flujo de aprobación de préstamos utilizando JavaScript, JSON y XML.</li>
+                                        <li data-i18n="job_desc2_finbe">Validación de perfiles de clientes contra bases de datos internas con SQL y C#, integrando con DeFi Solutions LOS.</li>
+                                        <li data-i18n="job_desc3_finbe">Rediseño de flujos automáticos para rechazar solicitudes que no cumplen criterios, reduciendo costos operativos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-card">
+                            <div class="exp-item">
+                                <img src="Files/Orbitas.jpg" class="exp-logo" alt="OrbitasCR">
+                                <div class="exp-info">
+                                    <strong data-i18n="job_title_orbitas">FullStack Developer</strong> — OrbitasCR
+                                    <br><small data-i18n="job_duration_orbitas">2021 - 2022</small>
+                                    <ul>
+                                        <li data-i18n="job_desc1_orbitas">Colaboración en el diseño y desarrollo de un sistema de gestión de mantenimiento para cadenas de comida rápida en Costa Rica, con soporte multi-sucursal y multiusuario, utilizando Entity e Identity Frameworks para autenticación y autorización.</li>
+                                        <li data-i18n="job_desc2_orbitas">Reuniones con supervisores y usuarios finales para recopilar requerimientos, traducir necesidades de negocio en soluciones técnicas y brindar capacitaciones para la adopción de la herramienta.</li>
+                                        <li data-i18n="job_desc3_orbitas">Responsable principal de soporte para una de las marcas del grupo, implementando nuevas funcionalidades, aplicando correcciones urgentes y asegurando la estabilidad del sistema con base en retroalimentación en tiempo real.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Contenedor principal para contenido futuro -->
-    <main class="container py-5 text-center">
-        <p class="text-muted">Sección en construcción. Aquí irán los proyectos, experiencia o enlaces.</p>
-    </main>
+    <section id="skills" class="skills-section section-card mb-5">
+    <h2 data-i18n="skills_title">Tecnologías & Stack</h2>
 
-    <!-- Bootstrap JS (interactividad) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <img src="Files/html.jpg" alt="HTML">
+            <span>HTML</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/css.jpg" alt="CSS">
+            <span>CSS</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/javascript.jpg" alt="JavaScript">
+            <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/csharp.jpg" alt="C#">
+            <span>C#</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/sql.jpg" alt="SQL">
+            <span>SQL</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/bootstrap.jpg" alt="Bootstrap">
+            <span>Bootstrap</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/defi.jpg" alt="defi">
+            <span>DeFi Solutions</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/azuredevops.jpg" alt="azuredevops">
+            <span>Azure DevOps</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/EntityFramework.jpg" alt="ef">
+            <span>Entity Framework</span>
+        </div>
+        <div class="skill-card">
+            <img src="Files/git.jpg" alt="git">
+            <span>Git</span>
+        </div>
+    </div>
+    </section>
 
+    <section id="gallery" class="mb-5 section-card">
+      <h2 data-i18n="gallery_title">Galería de proyectos</h2>
+
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-4">
+          <div class="project-card" tabindex="0" data-title="Asignación Inteligente de Prestamos" data-desc="Desarrollo de una solución para la distribución automatizada y equitativa de oportunidades de negocio (deals) a los financiadores (funders), balanceando la carga de trabajo entre equipos y miembros individuales. Esto optimizó la eficiencia operativa del departamento de financiación. Tecnologías: JavaScript, C#, SQL, XML, JSON" data-tech="JS, C#, SQL, XML, JSON">
+            <img src="Files/loanBalancing.jpg" alt="POS screenshot" class="img-fluid project-thumb">
+            <div class="project-meta p-3">
+              <h5 class="project-title">Asignación Inteligente de Prestamos</h5>
+              <p class="project-desc small text-muted">Solución para asignar de forma equitativa deals entre los funders</p>
+              <button class="btn btn-link btn-sm open-modal" data-i18n="project1_btn">Ver detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="project-card" tabindex="0" data-title="Integración DeFi Solutions" data-desc="Diseño, mantenimiento y optimizacion de reglas de decisión crediticia en DeFi Solutions usando JavaScript para acelerar aprobaciones, reducir intervención manual y mejorar control de riesgo. Tecnologías: JavaScript." data-tech="JavaScript">
+            <img src="Files/defiproject.jpg" alt="DeFi screenshot" class="img-fluid project-thumb">
+            <div class="project-meta p-3">
+              <h5 class="project-title">Integración DeFi Solutions</h5>
+              <p class="project-desc small text-muted">Reglas en DeFi usando JS para acelerar aprobaciones, reducir intervención manual y mejorar control de riesgo.</p>
+              <button class="btn btn-link btn-sm open-modal" data-i18n="project2_btn">Ver detalles</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4">
+          <div class="project-card" tabindex="0" data-title="API - Solicitudes Duplicadas" data-desc="Automatización de aprobación de créditos y detección de duplicados. Tecnologías: JS, C#, SQL, XML." data-tech="JS, C#, SQL, XML">
+            <img src="Files/duplicatecheck.jpg" alt="Automation screenshot" class="img-fluid project-thumb">
+            <div class="project-meta p-3">
+              <h5 class="project-title">API - Solicitudes Duplicadas</h5>
+              <p class="project-desc small text-muted">API de Validación y Prevención de Duplicados de Clientes</p>
+              <button class="btn btn-link btn-sm open-modal" data-i18n="project3_btn">Ver detalles</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="contact" class="py-5 contactForm section-card">
+        <div class="container d-flex justify-content-center">
+            <div class="col-md-6 rounded-4 p-4 shadow cfContainer">
+            
+                <h3 class="text-center fw-bold mb-1" data-i18n="contact_title">Contacto</h3>
+                <p class="text-center mb-4" data-i18n="contact_email_text">
+                    <span class="fw-semibold">(jsuncin04@gmail.com)</span>
+                </p>
+
+                <form id="contact-form">
+                    <div class="mb-3">
+                    <label class="form-label" for="name" data-i18n="contact_name_label">Nombre</label>
+                    <input type="text" class="form-control rounded-3" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <label class="form-label" for="email" data-i18n="contact_email_label">Correo electrónico</label>
+                    <input type="email" class="form-control rounded-3" id="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                    <label class="form-label" for="message" data-i18n="contact_msg_label">Mensaje</label>
+                    <textarea class="form-control rounded-3" id="message" rows="4" required></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                    <button type="submit" class="btn btn-light fw-semibold rounded-3" data-i18n="contact_send">
+                        <i class="fa-regular fa-message"></i> Enviar mensaje
+                    </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 footer-banner">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small class="text-muted">© <span id="year"></span> Christian Suncin</small>
+    </div>
+  </footer>
+
+  <a id="whatsAppBtn" class="whatsapp-fab" href="https://wa.me/50689365079" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+    <i class="fa fa-chevron-up"></i>
+  </button>
+
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Project title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modalDesc"></p>
+          <p><strong data-i18n="modal_tech_label">Tecnologías:</strong> <span id="modalTech"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="modal_close_btn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
